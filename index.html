@@ -10,7 +10,8 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Eddie Zida · AI & Data Engineer">
   <meta property="og:description" content="Je construis des systèmes d'IA qui vont jusqu'en production, de la donnée au LLM. Disponible pour un PFE en février 2027.">
-  <meta property="og:image" content="eddie1.jpg">
+  <meta property="og:image" content="https://eddiezida.github.io/eddie1.jpg">
+  <meta property="og:url" content="https://eddiezida.github.io/">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234a90d9'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='26' fill='white'%3EEZ%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -79,7 +80,7 @@
 
     <div class="stats reveal">
       <div class="stat"><b>2</b><span class="fr">stages IA / Data en 2026</span><span class="en">AI / Data internships in 2026</span></div>
-      <div class="stat"><b>6</b><span class="fr">projets menés de bout en bout</span><span class="en">end-to-end projects</span></div>
+      <div class="stat"><b>7</b><span class="fr">projets menés de bout en bout</span><span class="en">end-to-end projects</span></div>
       <div class="stat"><b>3</b><span class="fr">applications en ligne</span><span class="en">apps live online</span></div>
       <div class="stat"><b>8</b><span class="fr">certifications</span><span class="en">certifications</span></div>
     </div>
@@ -120,24 +121,9 @@
           </div>
           <span class="date"><span class="fr">Juil. - Sept. 2026</span><span class="en">Jul - Sep 2026</span></span>
         </div>
-        <p class="fr">Conception du socle de données, d'identité et de traçabilité (PostgreSQL) d'une plateforme qui corrige des copies de maths manuscrites avec un LLM. Développement du site web de l'entreprise.</p>
-        <p class="en">Designed the data, identity and traceability layer (PostgreSQL) of a platform that grades handwritten math exams with an LLM. Built the company website.</p>
-        <div class="stack"><span class="pill">PostgreSQL</span><span class="pill">SQLAlchemy</span><span class="pill">Alembic</span><span class="pill">Streamlit</span><span class="pill">LLM</span></div>
-      </div>
-    </div>
-
-    <div class="timeline-item reveal">
-      <div class="card">
-        <div class="xp-head">
-          <div>
-            <h3>Lead Tech · Hackathon</h3>
-            <div class="org">La CAN de l'Innovation · Rabat</div>
-          </div>
-          <span class="date"><span class="fr">Déc. 2025</span><span class="en">Dec 2025</span></span>
-        </div>
-        <p class="fr">Pilotage technique d'une équipe de 4 sur CO-BAG, une plateforme de consigne de bagages pour les stades : reconnaissance faciale, agent IA multilingue, authentification par QR code. MVP livré en 48 h.</p>
-        <p class="en">Led a team of 4 to build CO-BAG, a smart luggage consignment platform for stadiums: facial recognition, multilingual AI agent, QR code authentication. MVP shipped in 48 hours.</p>
-        <div class="stack"><span class="pill">Team lead</span><span class="pill"><span class="fr">Agent IA</span><span class="en">AI agent</span></span><span class="pill">Computer vision</span></div>
+        <p class="fr">Conception du socle de données, d'identité et de traçabilité (PostgreSQL) d'une plateforme qui corrige des copies de maths manuscrites avec un LLM. Contribution à <a href="#projects">Chat'Maths</a>, le tuteur de maths par RAG, et développement du site web de l'entreprise. C'est aussi durant cette période que j'ai développé <a href="#projects">Griot</a>, un agent d'actualité par RAG.</p>
+        <p class="en">Designed the data, identity and traceability layer (PostgreSQL) of a platform that grades handwritten math exams with an LLM. Contributed to <a href="#projects">Chat'Maths</a>, the RAG-based math tutor, and built the company website. During this period I also built <a href="#projects">Griot</a>, a RAG-based news agent.</p>
+        <div class="stack"><span class="pill">PostgreSQL</span><span class="pill">SQLAlchemy</span><span class="pill">Alembic</span><span class="pill">RAG</span><span class="pill">LLM</span><span class="pill">Streamlit</span></div>
       </div>
     </div>
 
@@ -199,6 +185,47 @@
       </div>
     </article>
 
+    <article class="card project" data-cat="llm">
+      <div class="cover alt2"><i class="fas fa-newspaper"></i><div class="metric"><b><span class="fr">RAG strict</span><span class="en">Strict RAG</span></b><span class="fr">sources toujours citées</span><span class="en">sources always cited</span></div></div>
+      <div class="project-body">
+        <div class="project-type">LLM · RAG · <span class="fr">Agent d'actualité</span><span class="en">News agent</span></div>
+        <h3>Griot</h3>
+        <dl class="case">
+          <dt><span class="fr">Problème</span><span class="en">Problem</span></dt>
+          <dd><span class="fr">Suivre l'actualité ouest-africaine sans qu'un assistant IA invente des faits.</span><span class="en">Follow West African news without an AI assistant making facts up.</span></dd>
+          <dt><span class="fr">Solution</span><span class="en">Built</span></dt>
+          <dd><span class="fr">Un agent conversationnel qui ne répond <b>qu'à partir d'articles de presse ingérés</b> (flux RSS du Burkina Faso, Sénégal, Mali, Côte d'Ivoire, tech et international) et cite ses sources. Ingestion automatique toutes les 6 h.</span><span class="en">A conversational agent that answers <b>only from ingested press articles</b> (RSS feeds from Burkina Faso, Senegal, Mali, Côte d'Ivoire, tech and world news) and cites its sources. Automatic ingestion every 6 hours.</span></dd>
+          <dt><span class="fr">Résultat</span><span class="en">Result</span></dt>
+          <dd><span class="fr">Pipeline complet, testé et conteneurisé. Démo publique en préparation.</span><span class="en">Full pipeline, tested and containerized. Public demo in progress.</span></dd>
+        </dl>
+        <div class="stack"><span class="pill">Gemini</span><span class="pill">Chroma</span><span class="pill">Tool calling</span><span class="pill">Docker</span><span class="pill">GitHub Actions</span></div>
+        <div class="links-row">
+          <a class="badge" href="https://github.com/EddieZIDA/Griot" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+          <span class="badge off"><i class="fas fa-hourglass-half"></i> <span class="fr">Démo bientôt</span><span class="en">Demo soon</span></span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card project" data-cat="ml">
+      <div class="cover"><i class="fas fa-plane"></i><div class="metric"><b><span class="fr">Couverture 90 %</span><span class="en">90% coverage</span></b><span class="fr">36K événements NTSB</span><span class="en">36K NTSB events</span></div></div>
+      <div class="project-body">
+        <div class="project-type"><span class="fr">Classification · Sécurité aérienne · binôme</span><span class="en">Classification · Aviation safety · team of 2</span></div>
+        <h3>AeroRisk</h3>
+        <dl class="case">
+          <dt><span class="fr">Problème</span><span class="en">Problem</span></dt>
+          <dd><span class="fr">Estimer la gravité d'un accident aérien, et dire à quel point la prédiction est fiable.</span><span class="en">Estimate the severity of an aviation accident, and say how reliable the prediction is.</span></dd>
+          <dt><span class="fr">Solution</span><span class="en">Built</span></dt>
+          <dd><span class="fr">6 modèles comparés sur 36 260 rapports NTSB enrichis de la météo NOAA, avec un découpage temporel (entraîné sur 2008 - 2018, testé sur 2022 - 2026). XGBoost retenu, incertitude par prédiction conforme (MAPIE), rapport de sécurité généré par Gemini. API Flask, MongoDB, interface React, 53 tests.</span><span class="en">6 models benchmarked on 36,260 NTSB reports enriched with NOAA weather, using a temporal split (trained on 2008 - 2018, tested on 2022 - 2026). XGBoost selected, uncertainty via conformal prediction (MAPIE), safety report generated by Gemini. Flask API, MongoDB, React interface, 53 tests.</span></dd>
+          <dt><span class="fr">Résultat</span><span class="en">Result</span></dt>
+          <dd><span class="fr"><b>Couverture de 89,97 %</b> mesurée sur le jeu de test pour une cible de 90 %. AUC 0,727.</span><span class="en"><b>89.97% coverage</b> measured on the test set for a 90% target. AUC 0.727.</span></dd>
+        </dl>
+        <div class="stack"><span class="pill">XGBoost</span><span class="pill">MAPIE</span><span class="pill">Gemini</span><span class="pill">Flask</span><span class="pill">MongoDB</span><span class="pill">React</span></div>
+        <div class="links-row">
+          <a class="badge" href="https://github.com/EddieZIDA/aviation-risk-predictor" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </article>
+
     <article class="card project" data-cat="ml">
       <div class="cover alt"><i class="fas fa-city"></i><div class="metric"><b>R² = 0.909</b><span class="fr">50K lignes</span><span class="en">50K rows</span></div></div>
       <div class="project-body">
@@ -236,27 +263,6 @@
         <div class="stack"><span class="pill">LightGBM</span><span class="pill">SHAP</span><span class="pill">MLflow</span></div>
         <div class="links-row">
           <a class="badge" href="https://github.com/EddieZIDA/churn-prediction" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="card project" data-cat="ml">
-      <div class="cover"><i class="fas fa-plane"></i><div class="metric"><b>PFA 2026</b><span class="fr">binôme</span><span class="en">team of 2</span></div></div>
-      <div class="project-body">
-        <div class="project-type"><span class="fr">Classification · Sécurité aérienne</span><span class="en">Classification · Aviation safety</span></div>
-        <h3>AeroRisk</h3>
-        <dl class="case">
-          <dt><span class="fr">Problème</span><span class="en">Problem</span></dt>
-          <dd><span class="fr">Anticiper la gravité d'un accident aérien à partir des données d'incident.</span><span class="en">Anticipate the severity of an aviation accident from incident data.</span></dd>
-          <dt><span class="fr">Solution</span><span class="en">Built</span></dt>
-          <dd><span class="fr">Modèle de classification de la gravité, projet de fin d'année. <!-- TODO : préciser ta contribution --></span><span class="en">Severity classification model, end-of-year project. <!-- TODO: your contribution --></span></dd>
-          <dt><span class="fr">Résultat</span><span class="en">Result</span></dt>
-          <dd><!-- TODO : ajouter la métrique principale --><span class="fr">À compléter.</span><span class="en">To be completed.</span></dd>
-        </dl>
-        <div class="stack"><span class="pill">Python</span><span class="pill">Scikit-learn</span></div>
-        <div class="links-row">
-          <!-- TODO : vérifier l'URL du dépôt -->
-          <a class="badge" href="https://github.com/EddieZIDA/aviation-risk-predictor" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
         </div>
       </div>
     </article>
@@ -355,12 +361,12 @@
     <div class="card">
       <div class="service-icon"><i class="fas fa-robot"></i></div>
       <h3><span class="fr">IA &amp; LLM</span><span class="en">AI &amp; LLM</span></h3>
-      <div class="stack"><span class="pill">LLM APIs</span><span class="pill">RAG</span><span class="pill">Prompt engineering</span><span class="pill">NLP</span><span class="pill">FastAPI</span></div>
+      <div class="stack"><span class="pill">LLM APIs</span><span class="pill">RAG</span><span class="pill">Tool calling</span><span class="pill">Chroma</span><span class="pill">Prompt engineering</span><span class="pill">FastAPI</span></div>
     </div>
     <div class="card">
       <div class="service-icon"><i class="fas fa-brain"></i></div>
       <h3>Machine Learning</h3>
-      <div class="stack"><span class="pill">Scikit-learn</span><span class="pill">XGBoost</span><span class="pill">LightGBM</span><span class="pill">SHAP</span><span class="pill">MLflow</span><span class="pill">Deep Learning</span></div>
+      <div class="stack"><span class="pill">Scikit-learn</span><span class="pill">XGBoost</span><span class="pill">LightGBM</span><span class="pill">MAPIE</span><span class="pill">SHAP</span><span class="pill">MLflow</span></div>
     </div>
     <div class="card">
       <div class="service-icon"><i class="fas fa-database"></i></div>

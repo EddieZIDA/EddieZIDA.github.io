@@ -299,6 +299,8 @@ a.badge.solid:hover { background: var(--blue-dark); }
   padding: 3px 11px; border-radius: 999px; white-space: nowrap;
 }
 .timeline-item p { color: var(--ink2); font-size: .92rem; margin-top: 10px; }
+.timeline-item p a { color: var(--blue-dark); font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(74,144,217,.4); transition: color .2s, border-color .2s; }
+.timeline-item p a:hover { color: var(--blue); border-color: var(--blue); }
 
 /* =========================================================
    PROJETS (format étude de cas)

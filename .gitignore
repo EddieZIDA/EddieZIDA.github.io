@@ -1,0 +1,15 @@
+# Ancienne version du site (sauvegarde locale uniquement)
+_ancienne_version/
+
+# Fichiers générés par Claude
+Claude outputs/
+
+# Fichiers système Windows / macOS
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Dossiers d'éditeur et outils
+.vscode/
+.sixth/
+.vercel/

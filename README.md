@@ -1,5 +1,14 @@
 # Portfolio · Eddie Zida
 
+**Site one-page bilingue présentant mes projets IA et data en études de cas**
+
+[![Site en ligne](https://img.shields.io/badge/Site-en%20ligne-2ea44f)](https://eddiezida.github.io)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?logo=githubpages&logoColor=white)
+![Langues](https://img.shields.io/badge/Langues-FR%20%2F%20EN-blue)
+
 Portfolio personnel de **Wend Kouni Eddie Eliel Zida**, élève-ingénieur Big Data & IA à l'ISGA Rabat.
 AI & Data Engineer : systèmes LLM, machine learning et plateformes de données.
 
@@ -12,6 +21,20 @@ AI & Data Engineer : systèmes LLM, machine learning et plateformes de données.
 - Compétences, formation et certifications
 - Formulaire de contact (Formspree)
 - Site bilingue français / anglais
+
+## Projets présentés
+
+| Projet | Type | Liens |
+|---|---|---|
+| Chat'Maths Burkina Faso | LLM, RAG, EdTech (binôme, stage Hakili Lab) | [Démo](https://amira.hakililab.com/) · code privé |
+| Griot | LLM, RAG, agent d'actualité | [Code](https://github.com/EddieZIDA/griot) |
+| AeroRisk | Classification, sécurité aérienne (PFA 2026, binôme) | [Code](https://github.com/EddieZIDA/aviation-risk-predictor) |
+| Correction de copies de maths par LLM | LLM, RAG, EdTech (binôme, stage Hakili Lab) | Code privé |
+| Indice de stress urbain | Régression, Smart City | [Démo](https://smartcitytraffic-stressindex-prediction.streamlit.app/) · [Code](https://github.com/EddieZIDA/SmartCityTraffic-StressIndex-Prediction) |
+| Prédiction de churn bancaire | Classification, banque | [Démo](https://churn-prediction-mz.streamlit.app/) · [Code](https://github.com/EddieZIDA/churn-prediction) |
+| Kaggle House Prices | Régression, compétition Kaggle | [Code](https://github.com/EddieZIDA/KaggleCompetition_home-price-prediction) |
+| Site web Hakili Lab | Site web, CI/CD (stage Hakili Lab) | [Site](https://www.hakililab.com) · code privé |
+| Gestion de stock pour buvette | Application métier, Streamlit | Code privé |
 
 ## Stack
 

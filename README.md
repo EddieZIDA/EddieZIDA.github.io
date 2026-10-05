@@ -24,7 +24,8 @@ HTML, CSS et JavaScript, sans framework ni étape de build.
 ├── script.js     # langue, menu mobile, filtres, formulaire, retour en haut
 ├── icons/        # logos des outils (Devicon)
 ├── eddie1.jpg    # photo
-└── cv.pdf        # CV téléchargeable
+├── cv-eddie-zida-fr.pdf   # CV en français
+└── cv-eddie-zida-en.pdf   # CV en anglais
 ```
 
 ## Lancer en local

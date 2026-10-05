@@ -18,6 +18,11 @@ function setLang(lang) {
   store.set('lang', lang);
   langBtn.innerHTML = lang === 'fr' ? '<b>FR</b> / EN' : 'FR / <b>EN</b>';
 
+  // Le bouton CV télécharge la version dans la langue affichée
+  document.querySelectorAll('[data-cv]').forEach((a) => {
+    a.href = `cv-eddie-zida-${lang}.pdf`;
+  });
+
   // Placeholders des champs
   document.querySelectorAll('[data-ph-fr]').forEach((el) => {
     el.placeholder = lang === 'fr' ? el.dataset.phFr : el.dataset.phEn;

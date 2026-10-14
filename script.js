@@ -88,8 +88,12 @@ const projects = document.querySelectorAll('.project');
 
 filterButtons.forEach((btn) => {
   btn.addEventListener('click', () => {
-    filterButtons.forEach((b) => b.classList.remove('active'));
+    filterButtons.forEach((b) => {
+      b.classList.remove('active');
+      b.setAttribute('aria-pressed', 'false');
+    });
     btn.classList.add('active');
+    btn.setAttribute('aria-pressed', 'true');
     const f = btn.dataset.filter;
     projects.forEach((p) => p.classList.toggle('hidden', f !== 'all' && p.dataset.cat !== f));
   });
@@ -103,15 +107,11 @@ const t = (fr, en) => (root.dataset.lang === 'fr' ? fr : en);
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const data = new FormData(form);
+  // Objet lisible dans la boîte mail (champ spécial Formspree)
+  data.set('_subject', '[Portfolio] ' + data.get('subject') + ' · ' + data.get('name'));
 
-  // Tant que Formspree n'est pas configuré, on ouvre la messagerie de l'utilisateur
-  if (form.action.includes('VOTRE_ID')) {
-    const subject = encodeURIComponent('[Portfolio] ' + data.get('subject'));
-    const body = encodeURIComponent(data.get('message') + '\n\n' + data.get('name') + ' (' + data.get('email') + ')');
-    window.location.href = `mailto:zidaeddie@gmail.com?subject=${subject}&body=${body}`;
-    return;
-  }
-
+  const submitBtn = form.querySelector('[type="submit"]');
+  submitBtn.disabled = true;
   statusEl.className = 'form-status';
   statusEl.textContent = t('Envoi...', 'Sending...');
   try {
@@ -122,6 +122,8 @@ form.addEventListener('submit', async (e) => {
   } catch (err) {
     statusEl.className = 'form-status error';
     statusEl.textContent = t("Échec de l'envoi. Écrivez-moi à zidaeddie@gmail.com", 'Sending failed. Email me at zidaeddie@gmail.com');
+  } finally {
+    submitBtn.disabled = false;
   }
 });
 
